@@ -1,7 +1,7 @@
 ---
 title: Pydantic BaseModel 정리
 date: 2025-12-01 14:00:00 +0900
-categories: [Python, FastAPI]
+categories: [학습, Python]
 tags: [python, pydantic]
 ---
 

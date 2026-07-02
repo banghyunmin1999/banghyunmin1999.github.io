@@ -1,7 +1,7 @@
 ---
 title: 블로그를 Chirpy 테마로 새단장했습니다
 date: 2026-07-01 18:00:00 +0900
-categories: [일상]
+categories: [회고]
 tags: [블로그, jekyll, chirpy]
 ---
 

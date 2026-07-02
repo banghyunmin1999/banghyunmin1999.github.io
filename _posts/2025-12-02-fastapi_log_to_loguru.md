@@ -1,7 +1,7 @@
 ---
 title: FastAPI 로그를 loguru로 통합하기
 date: 2025-12-02 23:50:00 +0900
-categories: [Python, FastAPI]
+categories: [학습, Python]
 tags: [python, fastapi, loguru, logging]
 ---
 

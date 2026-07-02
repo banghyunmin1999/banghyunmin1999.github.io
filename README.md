@@ -1,39 +1,59 @@
-# Chirpy Starter
+# 방현민 Dev Blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+https://banghyunmin1999.github.io — Jekyll Chirpy 테마.
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+---
 
-## Why This Starter Exists
+## 📚 카테고리 체계 (이 규칙을 따를 것)
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
+구조: `categories: [1단, 2단]` + `tags: [세부기술]`
 
-To unlock all features, the following files must be present in your Jekyll site:
+| 1단 (글의 성격) | 언제 | 2단 (기술 도메인) |
+|---|---|---|
+| **학습** | 공부한 개념·도구 정리 | Python, AI, DevOps, Web, DB |
+| **사이드 프로젝트** | 개인 프로젝트 개발기 | 프로젝트명 |
+| **트러블슈팅** | 문제→원인→해결 스토리 | Python, AI, DevOps, Web, DB |
+| **회고** | 주간/월간/프로젝트 회고, 일상 | (없음) |
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+태그: 소문자 통일 (`python`, `fastapi`, `vllm`, `docker`, `k8s`, `llm` ...)
+
+### front matter 템플릿
+```yaml
+---
+title: 글 제목
+date: YYYY-MM-DD HH:MM:00 +0900
+categories: [학습, Python]
+tags: [python, fastapi]
+---
 ```
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+---
 
-## Usage
+## 🚫 회사 관련 글 규칙 (발행 전 필수 체크)
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+회사 업무에서 나온 경험은 **트러블슈팅/학습으로 완전히 일반화**해서 쓴다.
+글만 보면 어느 회사인지, 무슨 제품인지 알 수 없어야 함.
 
-## Contributing
+**절대 금지:**
+- [ ] 회사 코드 원문
+- [ ] 내부 시스템명·제품명·고객사명
+- [ ] 내부 아키텍처 다이어그램, 실제 성능 수치·데이터
+- [ ] 사내에서만 아는 도메인 정보
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+**허용:**
+- 일반화된 문제 구조, 공개 기술의 사용법, 내가 배운 교훈
 
-## License
+예시: "OO사 열화상 냙상감지 모델이..." ❌ → "열화상 영상 기반 객체 탐지에서 정규화 이슈" ✅
 
-This work is published under [MIT][mit] License.
+---
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+## 🔗 Notion 개발일지 → 블로그 매핑
+
+| Notion 일지 분류 | 블로그 카테고리 |
+|---|---|
+| 트러블슈팅 | 트러블슈팅 (일반화 필터 통과 후) |
+| 학습 | 학습 |
+| 회고 | 회고 |
+| 아이디어·결정 | 원칙적 비공개 (Notion에만) |
+
+운영 흐름: 매일 Notion 개발일지 → 1~2주마다 글감 골라 블로그 발행 (Claude가 초안→확인→커밋)
