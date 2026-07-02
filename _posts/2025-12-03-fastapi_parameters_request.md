@@ -1,8 +1,8 @@
 ---
 title: FastAPI 파라미터 실습 (Path·Query·Request Body)
 date: 2025-12-03 21:24:00 +0900
-categories: [학습, Python]
-tags: [python, fastapi, pydantic]
+categories: [Python, FastAPI]
+tags: [학습, python, fastapi, pydantic]
 ---
 
 이곳에서 하나씩 직접 코드를 작성하며 익혀봅시다.

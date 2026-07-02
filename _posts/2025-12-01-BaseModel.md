@@ -1,8 +1,8 @@
 ---
 title: Pydantic BaseModel 정리
 date: 2025-12-01 14:00:00 +0900
-categories: [학습, Python]
-tags: [python, pydantic]
+categories: [Python, Pydantic]
+tags: [학습, python, pydantic]
 ---
 
 basemodel 설치 하기
